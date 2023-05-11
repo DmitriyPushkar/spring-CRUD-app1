@@ -1,13 +1,11 @@
 package ru.pushkarev.springcourse.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import ru.pushkarev.springcourse.dao.PersonDAO;
 import ru.pushkarev.springcourse.models.Person;
 
