@@ -1,26 +1,28 @@
-package ru.alishev.springcourse.controllers;
+package ru.pushkarev.springcourse.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.alishev.springcourse.dao.PersonDAO;
-import ru.alishev.springcourse.models.Person;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import ru.pushkarev.springcourse.dao.PersonDAO;
+import ru.pushkarev.springcourse.models.Person;
 
 import javax.validation.Valid;
 
-/**
- * @author Neil Alishev
- */
+
 @Controller
 @RequestMapping("/people")
 public class PeopleController {
 
+
     private final PersonDAO personDAO;
 
     @Autowired
-    public PeopleController(PersonDAO personDAO) {
+    public PeopleController(PersonDAO personDAO, Environment environment) {
         this.personDAO = personDAO;
     }
 

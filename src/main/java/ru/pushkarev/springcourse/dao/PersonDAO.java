@@ -1,18 +1,14 @@
-package ru.alishev.springcourse.dao;
+package ru.pushkarev.springcourse.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import ru.alishev.springcourse.models.Person;
+import ru.pushkarev.springcourse.models.Person;
 
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Neil Alishev
- */
+
 @Component
 public class PersonDAO {
 

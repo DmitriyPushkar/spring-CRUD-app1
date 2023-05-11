@@ -1,13 +1,11 @@
-package ru.alishev.springcourse.models;
+package ru.pushkarev.springcourse.models;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
-/**
- * @author Neil Alishev
- */
+
 public class Person {
     private int id;
     @NotEmpty(message="Name should not be empty")
